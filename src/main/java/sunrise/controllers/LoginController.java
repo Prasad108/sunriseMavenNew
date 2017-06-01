@@ -86,6 +86,7 @@ public class LoginController {
 		 System.out.println("inside the prodcuct slider loader");
 		
 		String str=CatDAO.GetCategory_and_SubCategory_toShow();
+		System.out.println("sidebar is : "+str);
 		System.out.println("user credentials are uid= "+user.getUid()+" pwd is "+user.getPassword()+" type is "+user.getType()+"");
 		
 		if(user!=null)
