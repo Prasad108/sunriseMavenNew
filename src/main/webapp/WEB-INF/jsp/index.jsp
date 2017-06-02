@@ -1,5 +1,4 @@
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.Statement"%>
+
 <%@page import="sunrise.beans.User"%>
 <%@page import="sunrise.DAO.impl.ProductDAOimpl"%>
 <%@page import="org.springframework.beans.factory.annotation.Autowired"%>
