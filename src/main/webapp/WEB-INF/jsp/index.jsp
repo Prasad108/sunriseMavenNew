@@ -6,7 +6,7 @@
     pageEncoding="utf-8"%>
     
  <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>   
+ 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -320,6 +320,11 @@
 									<label class="control-label" for="postcode">Zip /
 										Postal Code<sup>*</sup>
 									</label>
+									<select id="postcode" name="postcode" style="margin-left: 4%">
+									<option id="prodCat" value="423208">423208</option>
+									
+			
+									</select>
 									
 									
 								<!--  	<sql:setDataSource var="post" driver="com.mysql.jdbc.Driver" 
