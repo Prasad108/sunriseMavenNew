@@ -323,7 +323,7 @@
 									</label>
 									
 									
-									<sql:setDataSource var="post" driver="com.mysql.jdbc.Driver" 
+								<!--  	<sql:setDataSource var="post" driver="com.mysql.jdbc.Driver" 
  										url="jdbc:mysql://localhost/sunrise" user="root" password="root"/> 
 					
 									<sql:query dataSource="${post}" var="result"> 
@@ -336,6 +336,7 @@
 									</c:forEach>
 			
 									</select>
+									-->
 								</div> 
 
 								<div class="control-group">
