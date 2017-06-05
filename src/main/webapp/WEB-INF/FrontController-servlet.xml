@@ -30,11 +30,11 @@
    
      <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource"> 
     	<property name="driverClassName" value="com.mysql.jdbc.Driver" /> 
-    	<property name="url" value="jdbc:mysql://172.30.132.132:3306/sunrise" /> 
-    	    	<property name="username" value="Prasad" /> 
-    	<property name="password" value="Dukale" /> 
+    	<property name="url" value="${jdbc.url}" /> 
+    	    	<property name="username" value="${jdbc.password}" /> 
+    	<property name="password" value="${jdbc.password}" /> 
     </bean> 
-    <!--
+    <!--jdbc:mysql://172.30.132.132:3306/sunrise
      <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource"> 
     	<property name="driverClassName" value="com.mysql.jdbc.Driver" /> 
     	<property name="url" value="jdbc:mysql://172.30.183.248:3306/sunrise" /> 
