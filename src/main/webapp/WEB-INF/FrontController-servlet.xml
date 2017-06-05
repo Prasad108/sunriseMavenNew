@@ -21,19 +21,22 @@
 </bean>
    
    
-   <!--  <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource"> 
-    	<property name="driverClassName" value="com.mysql.jdbc.Driver" /> 
-    	<property name="url" value="jdbc:mysql://us-cdbr-azure-east-c.cloudapp.net:3306/acsm_a2411d55f9e37b0" /> 
-    	    	<property name="username" value="b5c002df4cf15b" /> 
-    	<property name="password" value="36315222" /> 
-      </bean>   -->
+  <bean id="applicationProperties"  class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+ 
+    <property name="location" value="classpath:db.properties" />
+    <property name="ignoreResourceNotFound" value="true" />
+    <property name="ignoreUnresolvablePlaceholders" value="true" />
+ 
+</bean>
    
-     <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource"> 
-    	<property name="driverClassName" value="com.mysql.jdbc.Driver" /> 
-    	<property name="url" value="${jdbc.url}" /> 
-    	    	<property name="username" value="${jdbc.password}" /> 
-    	<property name="password" value="${jdbc.password}" /> 
-    </bean> 
+
+   
+     <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <property name="driverClassName" value="${ driverClassName}" />
+    <property name="url" value="${url}" />
+    <property name="username" value="${username}" />
+    <property name="password" value="${password}" />
+</bean>
     <!--jdbc:mysql://172.30.132.132:3306/sunrise
      <bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource"> 
     	<property name="driverClassName" value="com.mysql.jdbc.Driver" /> 
